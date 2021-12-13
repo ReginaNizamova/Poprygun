@@ -1,0 +1,19 @@
+﻿<Window x:Class="Agents.PriorityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Agents"
+        mc:Ignorable="d"
+        Title="Изменить приоритет на..." Height="200" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="NewPriority" Width="80" Height="30" FontSize="20" PreviewTextInput="NewPriority_PreviewTextInput"/>
+        <Button x:Name="OK" Grid.Row="1" Width="50" HorizontalAlignment="Center" Content="OK" Background="Transparent" BorderThickness="0" FontSize="16" Click="OK_Click"/>
+        
+    </Grid>
+</Window>
